@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #F0EEE9;
+}
+
+h1, h2 {
+    color: cyan;
+    font-family: Girassol;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.1rem transparent;
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+}
+
+.logo {
+    background-image: url(./img/zen-balancing-pebbles-misty-lake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header > ul > a {
+    text-decoration: none;
+}
+
+header > ul > a > li {
+    list-style: none;
+    font-family: Roboto;
+    color: #4c4d4e;
+}
+
+/* body */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > p {
+    font-family: Roboto;
+    color: #4c4d4e;
+    text-indent: 2rem;
+    margin: 1rem;
+
+}
+
+li , a {
+    font-family: Roboto;
+}
+
+main > section > article {
+    border: solid 0.1rem transparent;
+    border-radius: 15px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 15rem;
+    height: 12rem;
+    background-color: #00A0B0;
+}
+
+.my-projects {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.my-projects > li:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.1rem transparent;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 5rem;
+    
+}
+
+.img {
+    background-image: url(./img/montagne.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.my-projects > li {
+    list-style: square;
+    color: #4c4d4e;
+    line-height: 1.4;
+
+}
+
+.my-projects > a {
+    text-decoration: none;
+    border: solid 0.1rem transparent;
+    border-radius: 30px;
+    padding: 0.2rem;
+    list-style: none;
+    background-color: cyan;
+    color: white;
+}
+
+.my-projects > a:hover {
+    background-color: #F0EEE9;
+    border: solid 0.1rem cyan;
+    color: #4c4d4e;
+}
+
+@media screen and (min-width: 992px) {
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color: #00A0B0;
+    }
+
+    header > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+        
+    }
+
+    header > ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        
+    }
+
+    header > ul > a {
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: 1rem;
+    }
+
+    main > section:first-of-type {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+
+    }
+
+    main > section:first-of-type > article {
+        width: 30rem;
+        height: 15rem;
+    }
+
+    main > section:last-of-type h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .my-projects {
+        width: 62rem;
+        height: 15rem;
+        background-image: url(./img/montagne.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .my-projects > li:first-of-type {
+        display: none;
+    }
+
+
+
+}
